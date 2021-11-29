@@ -18,7 +18,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets\icons\webLogo.png"
+      href="assets\images\webLogo.png"
     />
 
     <!-- Animate CSS CDN -->
@@ -32,7 +32,7 @@
   <body>
     <!-- Navbar -->
     <nav>
-        <h1>SHYAM PRAG | Software Developer</h1>
+        <h1> <i>shyam prag</i> | <strong>Software Developer</strong></h1>
         <ul class="navigation">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -123,6 +123,22 @@
       <h2 class="projects-title">Some cool projects I've worked on</h2>
       <div class="projects-container">
         
+       
+
+        <div class="project-container project-card">
+          <h3 class="project-title" style="text-decoration: underline;" >Rent-A-Trainer</h3>
+          <img
+            src="assets\images\androidApp.PNG"
+            alt="Rent-A-Trainer"
+            loading="lazy"
+            class="project-pic"
+          />
+          
+          <p class="project-details">
+            I was the group leader for a university project. I contributed to a fitness application 
+          </p>
+        </div>
+
         <div class="project-container project-card">
 
           <h3 class="project-title" style="text-decoration: underline;">Discord Bot</h3>
@@ -140,20 +156,6 @@
           </p>
           <a href="https://github.com/SoftGangCorp/SoftGangBot" target="_blank" class="project-link">Check it Out</a>
         </div>
-
-        <div class="project-container project-card">
-          <h3 class="project-title" style="text-decoration: underline;" >Rent-A-Trainer</h3>
-          <img
-            src="assets\images\androidApp.PNG"
-            alt="Rent-A-Trainer"
-            loading="lazy"
-            class="project-pic"
-          />
-          
-          <p class="project-details">
-            I was the group leader for a university project. I contributed to a fitness application 
-          </p>
-        </div>
       </div>
     </section>
 
@@ -162,14 +164,14 @@
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
+          <form action="https://formspree.io/f/xjvlbedd" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="sender-name"
-                placeholder="Enter Your Name"
+                placeholder="Enter Your Name:"
                 class="input-field"
                 required
               />
@@ -180,7 +182,7 @@
                 type="email"
                 id="email"
                 name="sender-email"
-                placeholder="Enter Your Email"
+                placeholder="Enter Your Email:"
                 class="input-field"
                 required
               />
@@ -191,7 +193,7 @@
                 id="message"
                 cols="60"
                 rows="10"
-                placeholder="Enter Your Message"
+                placeholder="Enter Your Message:"
                 name="message"
                 class="input-field"
                 required
@@ -209,11 +211,47 @@
     </section>
 
     <!-- Social accounts - Fixed to the right -->
-
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+      </div>
     <!-- Scroll to top -->
 
     <!-- Footer section -->
-
+    <footer>
+      <p class="copy">
+        Built by Shyam Prag
+      </p>
+      <div>
+        &copy;
+        <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        
+    </div>
+    </footer>
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
 
@@ -227,4 +265,5 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+
 </html>
