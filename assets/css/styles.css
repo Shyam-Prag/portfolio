@@ -47,7 +47,7 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
@@ -370,7 +370,7 @@ footer {
   /*changes reflects on screen with a width of 720px and below*/
 
   nav {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   nav ul {
@@ -379,7 +379,7 @@ footer {
     flex-direction: column;
     top: 86px;
     left: 10%;
-    width: 80%;
+    width: 100%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -403,7 +403,7 @@ footer {
 
   .hero img {
         padding-top: 50px;
-        height: 22rem;
+        height: 15rem;
         width: 30rem;
     }
 
@@ -441,9 +441,20 @@ footer {
 }
  /*changes reflects on screen with a width of 420px and below*/
 @media screen and (max-width: 420px) {
+ 
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+    margin-left: -5rem;
+  }
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 18rem;
+    width: 60%;
+  }
+
+  .burger-menu {
+    display: block;
   }
 
   .bio {
