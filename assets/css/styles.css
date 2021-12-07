@@ -165,11 +165,11 @@ nav ul li {
   padding: 0.3rem 0;
   
 }
-
+/*ABOUT ME BOX*/
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -182,6 +182,51 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
   text-align: center;
+}
+
+.more-about .about-me-wrapper{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.more-about .resume-button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.resume-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.resume-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.resume-button:hover span {
+  padding-right: 25px;
+}
+.resume-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*TECH - skills*/
