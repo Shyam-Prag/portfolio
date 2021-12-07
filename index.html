@@ -32,7 +32,8 @@
   <body>
     <!-- Navbar -->
     <nav>
-        <h1> <i>shyam prag</i> | <strong>Software Developer</strong></h1>
+        <h1>shyam prag | <strong>Software Developer</strong>  </h1>
+
         <ul class="navigation">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -59,49 +60,55 @@
         </div>
       </div>
     </Section>
+
     <!-- More about -->
-    <section class="more-about">
-      <h2> About Me</h2>
-      <p>
-        I am a final year student looking forward to growing my skillset by contributing towards
-        positive and impactful development. 
-      </p>
-    
-   
+    <section class="more-about" id="about">
+      <div class="about-me-wrapper">
+        <h2> About Me</h2>
+        <p>
+          <b>Education:</b> National Diploma in Information and Communication Technology in Applications Development.
+        </p>
+        <p>
+          <b>Team player:</b> I thrive working in a group environment.
+        </p>
+        <a href="assets\files\shyam_prag_-_Software_Developer.pdf"download="shyam_prag_resume.pdf"> <button class="resume-button" style="vertical-align:middle"><span>Download my resume here </span></button></a> 
+      </div>
     </section>
+
     <!-- Skills section -->
     <section class="skills" id="skills">
       <h2 class="skill-header">My Top Skills</h2>
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
           <img
-            src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png"
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+         />
+      
+          <img
+            src="https://img.icons8.com/external-wanicon-flat-wanicon/100/000000/external-sql-server-big-data-wanicon-flat-wanicon.png"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
-          <img
-          src="assets/icons/icons8-git.svg"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
-      
-          <img
-          src="https://img.icons8.com/external-wanicon-flat-wanicon/100/000000/external-sql-server-big-data-wanicon-flat-wanicon.png"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
         </div>
+
         <div class="second-set animate__animated animate__pulse">
           <img
-          src="https://img.icons8.com/fluency-systems-regular/96/000000/html.png"
-          alt=""
-          loading="lazy"
-          class="icon icon-card"
-        />
+            src="https://img.icons8.com/fluency-systems-regular/96/000000/html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
       
           <img
             src="assets/icons/icons8-react-native.svg"
@@ -122,7 +129,7 @@
        
 
         <div class="project-container project-card">
-          <h3 class="project-title" style="text-decoration: underline;" >Rent-A-Trainer</h3>
+          <h3 class="project-title" style="text-decoration: underline;padding-bottom: 15px" >Rent-A-Trainer</h3>
           <img
             src="assets\images\androidApp.PNG"
             alt="Rent-A-Trainer"
@@ -130,34 +137,33 @@
             class="project-pic"
           />
           
-          <p class="project-details">
-            I was the group leader for a university project. I contributed to a fitness application 
+          <p class="project-details" style="margin-bottom: -3px;">
+            Group leader for a fitness application, built for Android.
           </p>
         </div>
 
-        <div class="project-container project-card">
+        <div class="project-container project-card" >
 
-          <h3 class="project-title" style="text-decoration: underline;">Discord Bot - SoftGangBot</h3>
+          <h3 class="project-title" style="text-decoration: underline; padding-bottom: 15px;">Discord Bot - SoftGangBot</h3>
           <img
             src="assets\images\softgangBot1.PNG"
             alt="softgang-bot"
             loading="lazy"
             class="project-pic"
-            
           />
          
-          <p class="project-details">
+          <p class="project-details" style="padding-top: 15px;">
            I contributed to a discord bot which notifies members of the SoftGang discord to the latest prices of Bitcoin +
            the weather in CPT, on a daily basis.
           </p>
-          <a href="https://github.com/SoftGangCorp/SoftGangBot" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://github.com/SoftGangCorp/SoftGangBot" target="_blank" class="project-link">Click here to view &#8594;</a>
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
+      <h2>Get in touch with me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
           <form action="https://formspree.io/f/xjvlbedd" method="POST">
@@ -239,8 +245,9 @@
         <span id="copyright">
             <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
         </span>
-        
     </div>
+  
+
     <!-- scroll to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top &#8593;</button>
     </footer>

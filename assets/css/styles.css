@@ -47,7 +47,7 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
@@ -165,11 +165,11 @@ nav ul li {
   padding: 0.3rem 0;
   
 }
-
+/*ABOUT ME BOX*/
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -182,6 +182,51 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
   text-align: center;
+}
+
+.more-about .about-me-wrapper{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.more-about .resume-button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.resume-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.resume-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.resume-button:hover span {
+  padding-right: 25px;
+}
+.resume-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*TECH - skills*/
@@ -370,7 +415,7 @@ footer {
   /*changes reflects on screen with a width of 720px and below*/
 
   nav {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   nav ul {
@@ -379,7 +424,7 @@ footer {
     flex-direction: column;
     top: 86px;
     left: 10%;
-    width: 80%;
+    width: 100%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -403,7 +448,7 @@ footer {
 
   .hero img {
         padding-top: 50px;
-        height: 22rem;
+        height: 15rem;
         width: 30rem;
     }
 
@@ -441,9 +486,20 @@ footer {
 }
  /*changes reflects on screen with a width of 420px and below*/
 @media screen and (max-width: 420px) {
+ 
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+    margin-left: -5rem;
+  }
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 18rem;
+    width: 60%;
+  }
+
+  .burger-menu {
+    display: block;
   }
 
   .bio {
